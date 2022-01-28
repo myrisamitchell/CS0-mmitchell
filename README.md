@@ -1,5 +1,6 @@
-# CS0-mmitchell
-This is new. 
+# CS0 - Beginning Programming using Python & Lab
+- 2022
+- Myrisa Mitchell
+## Assignments
 
-#second section
-This is another section.
+### Labs
