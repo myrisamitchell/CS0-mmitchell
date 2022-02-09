@@ -10,3 +10,13 @@ Step 1a: Convert weight and height values to floats.
 Step 2: Calculate BMI using inputted values.
 Step 3: Print out BMI.
 '''
+
+#step 1
+weight = input("Please enter your weight: ")
+height = input("Please enter your height in meters: ")
+
+#step 1a
+weight = float(weight)
+height = float(height)
+
+#step2
