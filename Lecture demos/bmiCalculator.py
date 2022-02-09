@@ -23,6 +23,6 @@ height = float(height)
 bmi = weight/height**2
 
 #step3
-Print("Your BMI with weight",
+print("Your BMI with weight",
     weight, "and height", height,
     "is", bmi)
