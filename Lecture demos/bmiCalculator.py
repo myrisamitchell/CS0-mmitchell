@@ -12,7 +12,7 @@ Step 3: Print out BMI.
 '''
 
 #step 1
-weight = input("Please enter your weight: ")
+weight = input("Please enter your weight in kg: ")
 height = input("Please enter your height in meters: ")
 
 #step 1a
@@ -20,3 +20,9 @@ weight = float(weight)
 height = float(height)
 
 #step2
+bmi = weight/height**2
+
+#step3
+Print("Your BMI with weight",
+    weight, "and height", height,
+    "is", bmi)
