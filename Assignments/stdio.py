@@ -56,3 +56,15 @@ print("     |      |")
 print("     |")
 print("     |") 				              
 print("-------------") 	
+
+#step 5
+print("Stage 3")
+print("     |__________") 						
+print("     |/     |") 
+print("     |     (_)") 	
+print("     |     \|")
+print("     |      |") 	
+print("     |")
+print("     |") 				              
+print("-------------") 	
+
