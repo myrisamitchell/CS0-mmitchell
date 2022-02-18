@@ -21,7 +21,8 @@ name1 = input("Hey there, what's your name? ")
 
 #step 1a
 print(f'Hey, {name1}!')
-print("The hangman game is under construction, maybe you'll get to play it in a few weeks...")
+print("The hangman game is under construction,"
+     " maybe you'll get to play it in a few weeks...")
 print("This is what various stages of the hangman game will look like...")
 
 #step 2
@@ -68,3 +69,24 @@ print("     |")
 print("     |") 				              
 print("-------------") 	
 
+#step 6
+print("Stage 4")
+print("     |__________") 						
+print("     |/     |") 
+print("     |     (_)") 	
+print("     |     \|/")
+print("     |      |") 	
+print("     |")
+print("     |") 				              
+print("-------------") 	
+
+#step 7
+print("Stage 5")
+print("     |__________") 						
+print("     |/     |") 
+print("     |     (_)") 	
+print("     |     \|/")
+print("     |      |") 	
+print("     |     /")
+print("     |") 				              
+print("-------------") 	
