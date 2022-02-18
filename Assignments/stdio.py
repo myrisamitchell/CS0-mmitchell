@@ -14,5 +14,12 @@ Step 5: Print hangman's left arm.
 Step 6: Print hangman's right arm.
 Step 7: Print hangman's left leg.
 Step 8: Print hangmans' right leg.
-
 '''
+
+#step 1
+name1 = input("Hey there, what's your name? ")
+
+#step 1a
+print(f'Hey, {name1}!')
+print("The hangman game is under construction, maybe you'll get to play it in a few weeks...")
+print("This is what various stages of the hangman game will look like...")
