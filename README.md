@@ -2,5 +2,8 @@
 - 2022
 - Myrisa Mitchell
 ## Assignments
-
-### Labs
+## 1  -  Std IO
+- Program prints several stages of hangman gallows
+- Met all the requirements
+- Ran and tested the program many times
+- I deserve 100% grade
