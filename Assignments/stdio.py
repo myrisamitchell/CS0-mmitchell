@@ -34,3 +34,15 @@ print("     |")
 print("     |")
 print("     |") 				              
 print("-------------") 	
+
+#step 3
+print("Stage 1")
+print("     |__________") 						
+print("     |/     |") 
+print("     |     (_)") 	
+print("     |")
+print("     |") 	
+print("     |")
+print("     |") 				              
+print("-------------") 	
+
