@@ -101,3 +101,6 @@ print("     |      |")
 print("     |     / \\")
 print("     |") 				              
 print("-------------") 
+
+#Final
+print("I can't wait for you to play the complete game!")
