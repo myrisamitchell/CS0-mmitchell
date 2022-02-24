@@ -34,7 +34,7 @@ def calc_peri(side1,side2,side3):
     return perimeter
 
 #Step 5
-#Paraphrased from https://www.codesansar.com/python-programming-examples/check-validity-triangle-given-sides.htm
+#Source: https://www.codesansar.com/python-programming-examples/check-validity-triangle-given-sides.htm
 def if_triangle(side1,side2,side3):
     if (side1+side2>side3 and side1+side3>side2 and side2+side3>side1):
         return True
@@ -53,8 +53,13 @@ def main():
     #Step 3
     tri_peri = int(calc_peri(side1,side2,side3))
 
-    #Step 4
-    print(f"The area of a triangle with sides of {side1} inches, {side2} inches, and {side3} inches is {tri_area} square inches.")
-    print(f"The perimeter of a triangle with sides of {side1} inches, {side2} inches, and {side3} inches is {tri_peri} inches.")
+    #Step 4 and 6
+    #Source: https://www.codesansar.com/python-programming-examples/check-validity-triangle-given-sides.htm#:~:text=%23%20Validity%20of%20Triangle%20given%20sides,%3D%20float(input('Enter
+    if if_triangle(side1,side2,side3):
+        #Step 4
+        print(f"The area of a triangle with sides of {side1} inches, {side2} inches, and {side3} inches is {tri_area} square inches.")
+        print(f"The perimeter of a triangle with sides of {side1} inches, {side2} inches, and {side3} inches is {tri_peri} inches.")
+    else:
+        print("These sides don't form a triangle. Try again.")
 
 main()
