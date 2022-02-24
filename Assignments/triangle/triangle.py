@@ -19,8 +19,8 @@ def calc_area(side1,side2,side3):
     '''
     This function calculates the area of the triangle.
     '''
-    semi_peri = (side1+side2+side3) // 2
-    area = math.sqrt(semi_peri*(semi_peri-side1)(semi_peri-side2)(semi_peri-side3))
+    semi_peri = (side1+side2+side3) / 2
+    area = math.sqrt(semi_peri*(semi_peri-side1)*(semi_peri-side2)*(semi_peri-side3))
     return area
 
 #Step 3
@@ -36,5 +36,15 @@ def main():
     side1 = int(input("Please enter one side of the triangle in inches: "))
     side2 = int(input("Please enter the second side of the triangle in inches: "))
     side3 = int(input("Please enter the third side of the triangle in inches: "))
+
+    #Step 2
+    tri_area = int(calc_area(side1,side2,side3))
+
+    #Step 3
+    tri_peri = int(calc_peri(side1,side2,side3))
+
+    #Step 4
+    print(f"The area of a triangle with sides of {side1} inches, {side2} inches, and {side3} inches is {tri_area} square inches.")
+    print(f"The perimeter of a triangle with sides of {side1} inches, {side2} inches, and {side3} inches is {tri_peri} inches.")
 
 main()
