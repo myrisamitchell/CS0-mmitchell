@@ -10,6 +10,8 @@ Step 1: Prompt for sides of triangle.
 Step 2: Calculate area of triangle.
 Step 3: Calculate perimeter of triangle. 
 Step 4: Display area and perimeter of the triangle.
+Step 5: Determine if triangle can be formed. 
+Step 6: Display consensus on if triangle can be formed. 
 '''
 
 import math 
@@ -30,6 +32,14 @@ def calc_peri(side1,side2,side3):
     '''
     perimeter = side1+side2+side3
     return perimeter
+
+#Step 5
+#Paraphrased from https://www.codesansar.com/python-programming-examples/check-validity-triangle-given-sides.htm
+def if_triangle(side1,side2,side3):
+    if (side1+side2>side3 and side1+side3>side2 and side2+side3>side1):
+        return True
+    else:
+        return False
 
 def main():
     #Step 1
