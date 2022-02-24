@@ -11,3 +11,13 @@ Step 2: Calculate area of triangle.
 Step 3: Calculate perimeter of triangle. 
 Step 4: Display area and perimeter of the triangle.
 '''
+
+
+
+def main():
+    side1 = int(input("Please enter one side of the triangle in inches: "))
+    side2 = int(input("Please enter the second side of the triangle in inches: "))
+    side3 = int(input("Please enter the third side of the triangle in inches: "))
+    pass
+
+main()
