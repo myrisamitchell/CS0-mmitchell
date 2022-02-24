@@ -12,12 +12,25 @@ Step 3: Calculate perimeter of triangle.
 Step 4: Display area and perimeter of the triangle.
 '''
 
+#Step 2
+def calc_area(side1,side2,side3):
+    '''
+    This function calculates the area of the triangle.
+    '''
+    pass
 
+#Step 3
+def calc_peri(side1,side2,side3):
+    '''
+    This function calculates the perimeter of the triangle.
+    '''
+    perimeter = side1+side2+side3
+    return perimeter
 
 def main():
+    #Step 1
     side1 = int(input("Please enter one side of the triangle in inches: "))
     side2 = int(input("Please enter the second side of the triangle in inches: "))
     side3 = int(input("Please enter the third side of the triangle in inches: "))
-    pass
 
 main()
