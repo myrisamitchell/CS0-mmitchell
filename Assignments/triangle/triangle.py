@@ -12,12 +12,16 @@ Step 3: Calculate perimeter of triangle.
 Step 4: Display area and perimeter of the triangle.
 '''
 
+import math 
+
 #Step 2
 def calc_area(side1,side2,side3):
     '''
     This function calculates the area of the triangle.
     '''
-    pass
+    semi_peri = (side1+side2+side3) // 2
+    area = math.sqrt(semi_peri*(semi_peri-side1)(semi_peri-side2)(semi_peri-side3))
+    return area
 
 #Step 3
 def calc_peri(side1,side2,side3):
