@@ -14,16 +14,15 @@ Step 5: Determine if triangle can be formed.
 Step 6: Display consensus on if triangle can be formed. 
 '''
 
-import math 
+from math import sqrt
 
 #Step 2
 def calc_area(side1,side2,side3):
     '''
     This function calculates the area of the triangle.
     '''
-    semi_peri = (side1+side2+side3) / 2
-    area = math.sqrt(semi_peri*(semi_peri-side1)*(semi_peri-side2)*(semi_peri-side3))
-    return area
+    semi_peri = int(side1+side2+side3) / 2
+    area = sqrt(semi_peri*(semi_peri-side1)*(semi_peri-side2)*(semi_peri-side3))
 
 #Step 3
 def calc_peri(side1,side2,side3):
