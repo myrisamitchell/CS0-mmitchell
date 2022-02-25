@@ -22,14 +22,28 @@ def convert_seconds_to_minutes(seconds):
     minutes = seconds // 60 
     return minutes
 
+def convert_seconds_to_time(seconds):
+    hours = seconds // 3600
+    rem_seconds = seconds - (hours * 3600)
+    minutes = rem_seconds // 60 
+    rem_seconds = seconds%60
+    return hours, minutes, rem_seconds
+
+def tests():
+    assert convert_seconds_to_time(3661) == (1, 1, 1)
+    assert convert_seconds_to_time(5280) == (1, 28, 0)
+    print("All test cases passed.")
+
 def main():
+    tests()
     #Step 1
     seconds = int(input("Please enter the number of seconds: "))
     #Step 2
-    hours = convert_seconds_to_hours(seconds)
-    minutes = convert_seconds_to_minutes(seconds - (hours * 3600))
+    #hours = convert_seconds_to_hours(seconds)
+    #minutes = convert_seconds_to_minutes(seconds - (hours * 3600))
+    hours, minutes, rem_seconds = convert_seconds_to_time(seconds)
 
-    print(f"The time format of {seconds} seconds is {hours}:{minutes}:{seconds%60}.")
+    print(f"The time format of {seconds} seconds is {hours}:{minutes}:{rem_seconds}.")
     pass
 
 main()
