@@ -81,7 +81,7 @@ Local: Variable assigned to a defined function, cannot be called
     outside of function
 '''
 #To use a global variable in a function:
-def multiply_numbers(num1,num2)
+def multiply_numbers(num1,num2):
     global multiply_sum
     multiply_sum = num1*num2
     return multiply_sum
