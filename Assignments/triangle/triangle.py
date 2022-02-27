@@ -12,6 +12,7 @@ Step 3: Calculate perimeter of triangle.
 Step 4: Display area and perimeter of the triangle.
 Step 5: Determine if triangle can be formed. 
 Step 6: Display consensus on if triangle can be formed. 
+
 '''
 
 from math import sqrt
@@ -55,7 +56,7 @@ def main():
 
         #Step 3
         tri_peri = int(calc_peri(side1,side2,side3))
-        
+
         #Step 4
         print(f"The area of a triangle with sides of {side1} inches, {side2} inches, and {side3} inches is {tri_area} square inches.")
         print(f"The perimeter of a triangle with sides of {side1} inches, {side2} inches, and {side3} inches is {tri_peri} inches.")
@@ -63,3 +64,5 @@ def main():
         print("These sides don't form a triangle. Try again.")
 
 main()
+
+#Final Submission
