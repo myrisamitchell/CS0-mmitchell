@@ -7,3 +7,9 @@
 - Met all the requirements
 - Ran and tested the program many times
 - I deserve 100% grade
+## 2 - Triangle
+- Program finds area and perimeter given three sides of triangle.
+- Program determines if three sides form a valid triangle
+- All requirements are met
+- Program was tested at least 49 times
+- I deserve 100% grade
