@@ -24,7 +24,7 @@ Date: 2/25/2022
 
 main()"""
 
-def main():
+"""def main():
     money = int(input(f"How much money do you have in the bank? "))
     ferrari = input(f"Do you have a ferrari [y/yes | n/no]? ")
 
@@ -32,5 +32,15 @@ def main():
         print("Congrats! You can retire.")
     else:
         print("Sorry, back to work.")
+
+main()"""
+
+def main():
+    num = int(input("Please enter a whole number: "))
+    # not inverts the condition/ F -> T & T -> F
+    if not (num %2 == 0):
+        print(f"{num} is even.")
+    else:
+        print(f"{num} is odd.")
 
 main()
