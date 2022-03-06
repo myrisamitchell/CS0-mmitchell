@@ -29,3 +29,21 @@ Step 7b: Print the sqrt.
 Step 8: Promp the user for two numbers.
 Step 9: Call the functions.
 '''
+
+#Step 1
+def find_sum(num1, num2):
+    sum_answer = num1 + num2
+    return sum_answer
+    #step1b
+    print(f"{num1} + {num2} = {sum_answer}.")
+
+
+    
+
+def main():
+    num1 = input("Please enter a number: ")
+    num2 = input("Please enter another number: ")
+    
+    pass
+
+main()
