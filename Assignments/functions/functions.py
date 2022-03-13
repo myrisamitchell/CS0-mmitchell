@@ -52,7 +52,12 @@ def find_difference(num1, num2):
     print(f"{num1} minus {num2} is {diff_answer}.")
     return diff_answer
     
-    
+#Step 5
+def find_remain(num1, num2):
+    quot, remain = divmod(num1, num2)
+    #Step 5a
+    print(f"{num1} divided by {num2} is {quot} with a remainder of {remain}.")
+    return quot, remain
 
 def main():
     num1 = input("Please enter a number: ")
