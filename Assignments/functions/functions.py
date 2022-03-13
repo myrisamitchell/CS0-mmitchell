@@ -38,28 +38,28 @@ def find_sum(num1, num2):
 def find_product(num1, num2):
     prod_answer = num1 * num2
     #Step 2a
-    print(f"The product of {num1} and {num2} is {prod_answer}.")
+    print(f"{num1} * {num2} = {prod_answer}.")
     return prod_answer
 
 #Step 3
 def find_quotient(num1, num2):
     quot_answer = num1 / num2
     #Step 3a
-    print(f"{num1} divided by {num2} is {quot_answer}.")
+    print(f"{num1} / {num2} = {quot_answer}.")
     return quot_answer
 
 #Step 4
 def find_difference(num1, num2):
     diff_answer = num1 - num2
     #Step 4a
-    print(f"{num1} minus {num2} is {diff_answer}.")
+    print(f"{num1} - {num2} = {diff_answer}.")
     return diff_answer
     
 #Step 5
 def find_remain(num1, num2):
     quot, remain = divmod(num1, num2)
     #Step 5a
-    print(f"{num1} divided by {num2} is {quot} with a remainder of {remain}.")
+    print(f"{num1} / {num2} = {quot} with a remainder of {remain}.")
     return quot, remain
 
 #Step 6
@@ -75,13 +75,36 @@ def find_sqrt(num1, num2):
     sqrt_num2 = sqrt(num2)
     #Step 7a
     print(f"The square root of {num1} is {sqrt_num1}.")
-    print(f"The square root of {num2} is {sqrt_num2.")
+    print(f"The square root of {num2} is {sqrt_num2}.")
     return sqrt_num1, sqrt_num2
-    
+
+#Step 9
+def tests():
+    assert find_sum(12,5) == 17
+    assert find_sum(3,9) == 12
+    assert find_product(2,6) == 12
+    assert find_product(3,12) == 36
+    assert find_quotient(45,15) == 3
+    assert find_quotient(90,9) == 10
+    assert find_difference(42,10) == 32
+    assert find_difference(36,14) == 22
+    assert find_remain(42,5) == 8, 2
+    assert find_remain(94,13) == 7, 3
+    assert find_exp(2,3) == 8
+    assert find_exp(12,4) == 20736
+    assert find_sqrt(81,36) == 9, 6
+    assert find_sqrt(16,25) == 4, 5
+    print(f"All test cases passed.")
+
 
 def main():
+    #Step 10
+    tests()
+    #Step 8
     num1 = input("Please enter a number: ")
     num2 = input("Please enter another number: ")
+
+
     
     pass
 
