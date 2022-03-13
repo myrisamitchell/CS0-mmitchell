@@ -43,8 +43,14 @@ def find_quotient(num1, num2):
     quot_answer = num1 / num2
     #Step 3a
     print(f"{num1} divided by {num2} is {quot_answer}.")
+    return quot_answer
 
-
+#Step 4
+def find_difference(num1, num2):
+    diff_answer = num1 - num2
+    #Step 4a
+    print(f"{num1} minus {num2} is {diff_answer}.")
+    return diff_answer
     
     
 
