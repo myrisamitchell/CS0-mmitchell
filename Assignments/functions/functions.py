@@ -78,8 +78,18 @@ def find_sqrt(num1, num2):
         print(f"The square root of {num1} is {sqrt_num1}.")
         print(f"The square root of {num2} is {sqrt_num2}.")
         return sqrt_num1, sqrt_num2
+    elif (num1 < 0):
+        print(f"Cannot find the square root of {num1}.")
+        sqrt_num2 = sqrt(num2)
+        print(f"The square root of {num2} is {sqrt_num2}.")
+        return sqrt_num2
+    elif (num2 < 0):
+        print(f"Cannot find the square root of {num2}.")
+        sqrt_num1 = sqrt(num1)
+        print(f"The square root of {num1} is {sqrt_num1}.")
+        return sqrt_num1
     else:
-        print(f"Cannot find the square root of a negative number.")
+        print("Cannot find the square root of negative numbers.")
 
 #Step 9
 def tests():
@@ -91,12 +101,12 @@ def tests():
     assert find_quotient(90,9) == 10
     assert find_difference(42,10) == 32
     assert find_difference(36,14) == 22
-    assert find_remain(42,5) == 8, 2
-    assert find_remain(94,13) == 7, 3
+    assert find_remain(42,5) == (8,2)
+    assert find_remain(94,13) == (7,3)
     assert find_exp(2,3) == 8
     assert find_exp(12,4) == 20736
-    assert find_sqrt(81,36) == 9, 6
-    assert find_sqrt(16,25) == 4, 5
+    assert find_sqrt(81,36) == (9,6)
+    assert find_sqrt(16,25) == (4,5)
     print(f"All test cases passed.")
 
 
@@ -104,8 +114,8 @@ def main():
     #Step 10
     tests()
     #Step 8
-    num1 = input("Please enter a number: ")
-    num2 = input("Please enter another number: ")
+    num1 = int(input("Please enter a number: "))
+    num2 = int(input("Please enter another number: "))
     #Step 10
     find_sum(num1, num2)
     find_product(num1, num2)
