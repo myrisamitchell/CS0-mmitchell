@@ -24,6 +24,9 @@ Step 9: Create test function that tests all functions.
 Step 10: Call test function and main function.
 '''
 
+from math import sqrt
+
+
 #Step 1
 def find_sum(num1, num2):
     sum_answer = num1 + num2
@@ -65,6 +68,15 @@ def find_exp(num1, num2):
     #Step 6a
     print(f"{num1} raised to the power of {num2} is {exp_answer}.")
     return exp_answer
+
+#Step 7
+def find_sqrt(num1, num2):
+    sqrt_num1 = sqrt(num1)
+    sqrt_num2 = sqrt(num2)
+    #Step 7a
+    print(f"The square root of {num1} is {sqrt_num1}.")
+    print(f"The square root of {num2} is {sqrt_num2.")
+    return sqrt_num1, sqrt_num2
     
 
 def main():
