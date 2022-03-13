@@ -71,12 +71,15 @@ def find_exp(num1, num2):
 
 #Step 7
 def find_sqrt(num1, num2):
-    sqrt_num1 = sqrt(num1)
-    sqrt_num2 = sqrt(num2)
-    #Step 7a
-    print(f"The square root of {num1} is {sqrt_num1}.")
-    print(f"The square root of {num2} is {sqrt_num2}.")
-    return sqrt_num1, sqrt_num2
+    if (num1 > 0 and num2 > 0):
+        sqrt_num1 = sqrt(num1)
+        sqrt_num2 = sqrt(num2)
+        #Step 7a
+        print(f"The square root of {num1} is {sqrt_num1}.")
+        print(f"The square root of {num2} is {sqrt_num2}.")
+        return sqrt_num1, sqrt_num2
+    else:
+        print(f"Cannot find the square root of a negative number.")
 
 #Step 9
 def tests():
@@ -103,9 +106,13 @@ def main():
     #Step 8
     num1 = input("Please enter a number: ")
     num2 = input("Please enter another number: ")
-
-
-    
-    pass
+    #Step 10
+    find_sum(num1, num2)
+    find_product(num1, num2)
+    find_quotient(num1, num2)
+    find_difference(num1, num2)
+    find_remain(num1, num2)
+    find_exp(num1, num2)
+    find_sqrt(num1, num2)
 
 main()
