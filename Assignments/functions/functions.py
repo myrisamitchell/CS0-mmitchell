@@ -59,6 +59,14 @@ def find_remain(num1, num2):
     print(f"{num1} divided by {num2} is {quot} with a remainder of {remain}.")
     return quot, remain
 
+#Step 6
+def find_exp(num1, num2):
+    exp_answer = num1**num2
+    #Step 6a
+    print(f"{num1} raised to the power of {num2} is {exp_answer}.")
+    return exp_answer
+    
+
 def main():
     num1 = input("Please enter a number: ")
     num2 = input("Please enter another number: ")
