@@ -20,7 +20,8 @@ Step 6a: Print the value.
 Step 7: Define a function that finds the sqrt of both numbers.
 Step 7a: Print the sqrt.
 Step 8: Promp the user for two numbers.
-Step 9: Call test functions and main function.
+Step 9: Create test function that tests all functions.
+Step 10: Call test function and main function.
 '''
 
 #Step 1
@@ -36,6 +37,12 @@ def find_product(num1, num2):
     #Step 2a
     print(f"The product of {num1} and {num2} is {prod_answer}.")
     return prod_answer
+
+#Step 3
+def find_quotient(num1, num2):
+    quot_answer = num1 / num2
+    #Step 3a
+    print(f"{num1} divided by {num2} is {quot_answer}.")
 
 
     
