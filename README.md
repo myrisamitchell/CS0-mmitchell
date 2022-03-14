@@ -13,3 +13,8 @@
 - All requirements are met
 - Program was tested at least 49 times
 - I deserve 100% grade
+## 3 - Functions
+- Program includes 7 functions that perform basic operations on two prompted numbers. 
+- Meets all requirements
+- Program includes a test function and was tested manually multiple times. 
+- I deserve an A
