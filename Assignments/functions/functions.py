@@ -78,15 +78,15 @@ def find_sqrt(num1, num2):
         print(f"The square root of {num1} is {sqrt_num1}.")
         print(f"The square root of {num2} is {sqrt_num2}.")
         return sqrt_num1, sqrt_num2
-    elif (num1 < 0):
+    elif (num1 < 0 and num2 > 0):
         print(f"Cannot find the square root of {num1}.")
         sqrt_num2 = sqrt(num2)
         print(f"The square root of {num2} is {sqrt_num2}.")
         return sqrt_num2
-    elif (num2 < 0):
-        print(f"Cannot find the square root of {num2}.")
+    elif (num1 > 0 and num2 < 0):
         sqrt_num1 = sqrt(num1)
         print(f"The square root of {num1} is {sqrt_num1}.")
+        print(f"Cannot find the square root of {num2}.")
         return sqrt_num1
     else:
         print("Cannot find the square root of negative numbers.")
