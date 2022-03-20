@@ -18,3 +18,8 @@
 - Meets all requirements
 - Program includes a test function and was tested manually multiple times. 
 - I deserve an A
+## 4 - Conditionals
+-Program includes 5 functions that find the sum, product, avergae, min, and max of 5 prompted number
+-Includes test cases and meets all requirements
+-Was tested manually multiple times
+- I deserve 100% grade
