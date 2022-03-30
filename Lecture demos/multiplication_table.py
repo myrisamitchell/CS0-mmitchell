@@ -18,17 +18,17 @@ print a neat looking multiplication table like this:
 12:    12  24  36  48  60  72  84  96 108 120 132 144
 '''
 
-def print_table(table_size):
+def print_table(size):
     print(f"{'':>4}", end='')
-    for i in range(int(table_size)):
+    for i in range(size):
         print(f"{i+1:>4}", end='')
     print("")
-    for i in range(table_size+1):
+    for i in range(size+1):
         print(f"----", end='')
     print("")
-    for i in range(table_size):
+    for i in range(size):
         print(f"{i+1:<4}", end='')
-        for j in range(table_size):
+        for j in range(size):
             print(f"{(j+1)*(i+1):>4}", end='')
         print("")
 
@@ -41,7 +41,7 @@ def input_table_size():
             promptagain = False
         else:
             print("Please enter a whole number: ")
-    return int(size_of_table)
+    return size_of_table
 
 def main():
     size_of_table = input_table_size
