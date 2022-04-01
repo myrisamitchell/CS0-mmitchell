@@ -23,3 +23,8 @@
 -Includes test cases and meets all requirements
 -Was tested manually multiple times
 - I deserve 100% grade
+## Guess the Number
+- Program met all requirements
+- Updated readme file
+- Tested manually multiple times
+- I deserve 100% grade
