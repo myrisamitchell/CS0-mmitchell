@@ -28,3 +28,9 @@
 - Updated readme file
 - Tested manually multiple times
 - I deserve 100% grade
+## Avion
+- Solution accepted
+- Wrote and tested 3 test cases as the requirement asked
+- Screenshot is in the avion folder
+- Read.me is up to date 
+- Total points = 100
