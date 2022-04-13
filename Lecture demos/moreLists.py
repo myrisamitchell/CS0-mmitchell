@@ -33,5 +33,20 @@ def main():
     print(numbers2)
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
+
+def split_nums():
+    nums = input("Please enter 5 numebrs separated by a space: ")
+    nums = nums.split()
+    nums = [int(i) for i in nums]
+    # for i in range(len(nums)):
+    #     nums.append(int(nums[i]))
+    # nums = nums[5:]
+    print(nums)
+
+    somestring = ' '.join(nums)
+
+    print(somestring)
+
+split_nums()
