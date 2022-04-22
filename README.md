@@ -40,3 +40,9 @@
 - Screenshot is in simon_says folder
 - Read.me is up to date
 - Total points = 100
+## 8 - Falling Apart
+- Solution accepted
+- Wrote and tested 3 cases as the requirement asked
+- Screenshot is in fallingapart folder
+- Read.me is up to date
+- Total points = 100
