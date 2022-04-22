@@ -11,6 +11,8 @@ Step 4: Print out both sums
 Step 5: Define test function with three test cases
 '''
 
+from sys import *
+
 #Step 5
 def tests():
     list1 = [4, 2, 3, 1] 
@@ -28,8 +30,10 @@ def broken_integer():
     piece_list = input()
     piece_list = piece_list.split()
     piece_list = [int(i) for i in piece_list]
-    for i in piece_list:
-        pieces.append(i)    
+    piece_list.sort(reverse=True)
+    if (len(piece_list) == num_pieces):
+        for i in piece_list:
+            pieces.append(i)    
     return pieces
 
 def sort_sums(integer_list):
@@ -48,7 +52,8 @@ def sort_sums(integer_list):
     return alice_sum, bob_sum
 
 def main():
-    tests()
+    if (len(argv) == 2 and argv[1] == "test"):
+        tests()
     integer_list = broken_integer()
     sums = sort_sums(integer_list)
 
