@@ -16,11 +16,11 @@ from sys import *
 #Step 5
 def tests():
     list1 = [4, 2, 3, 1] 
-    assert sort_sums(list1) == (7, 3)
+    assert sort_sums(list1) == (6, 4)
     list2 = [8, 3, 2, 9, 1]
-    assert sort_sums(list2) == (11, 12)
+    assert sort_sums(list2) == (13, 10)
     list3 = [4, 5, 2]
-    assert sort_sums(list3) == (6, 5)
+    assert sort_sums(list3) == (7, 4)
 
 
 #Step 1
