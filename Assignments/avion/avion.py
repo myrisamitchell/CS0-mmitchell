@@ -12,13 +12,15 @@ Step 4: Create test function with 3 test cases
 '''
 
 def tests():
-    assert search_blimps("FBI-12", "HAND-97", "FOURTH3", "HAR35", "HIFBI-7") == [1, 5]
-    assert search_blimps("HI-34T", "FNI-J2", "FBI-7", "CRIFBI-3", "HRG43H") == [3, 4]
-    assert search_blimps("CRY-Y3", "HE-3HA", "AH75H3", "HE-6HTE", "MARIKA-8") == []  
+    blimps1 = ["FBI-12", "HAND-97", "FOURTH3", "HAR35", "HIFBI-7"]
+    blimps2 = ["HI-34T", "FNI-J2", "FBI-7", "CRIFBI-3", "HRG43H"]
+    blimps3 = ["CRY-Y3", "HE-3HA", "AH75H3", "HE-6HTE", "MARIKA-8"]
+    assert search_blimps(blimps1) == [1, 5]
+    assert search_blimps(blimps2) == [3, 4]
+    assert search_blimps(blimps3) == []  
 
 
-def search_blimps(blimp1, blimp2, blimp3, blimp4, blimp5):
-    blimps = [blimp1, blimp2, blimp3, blimp4, blimp5]
+def search_blimps(blimps):
     cia_blimp = []
     #Step 1
     for i in range(5):
@@ -29,12 +31,13 @@ def search_blimps(blimp1, blimp2, blimp3, blimp4, blimp5):
 def main():
     tests()
 
-    blimp1 = input()
-    blimp2 = input()
-    blimp3 = input()
-    blimp4 = input()
-    blimp5 = input()
-    ciaBlimp = search_blimps(blimp1, blimp2, blimp3, blimp4, blimp5)
+    # blimp1 = input()
+    # blimp2 = input()
+    # blimp3 = input()
+    # blimp4 = input()
+    # blimp5 = input()
+    blimps = [input() for i in range(5)]
+    ciaBlimp = search_blimps(blimps)
     if not ciaBlimp:
         print("HE GOT AWAY!")
     else:
