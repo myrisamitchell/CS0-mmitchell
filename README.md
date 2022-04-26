@@ -46,3 +46,9 @@
 - Screenshot is in fallingapart folder
 - Read.me is up to date
 - Total points = 100
+## 9 - A New Alphabet
+- Solution accepted
+- Wrote and tested 3 cases as the requirement asked
+- Screenshot is in new_alphabet folder
+- Read.me is up to date
+- Total points = 100
