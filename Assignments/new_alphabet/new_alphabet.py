@@ -46,7 +46,7 @@ def create_dict():
     new_alphabet["w"] = "\/\/"
     new_alphabet["x"] = "}{"
     new_alphabet["y"] = "`/"
-    new_alphabet["z"] = 2
+    new_alphabet["z"] = "2"
     return new_alphabet
 
 #Step 2
@@ -63,7 +63,7 @@ def convert_string(old_alphabet):
 
 
 def main():
-    
+
     if (len(argv)) == 2 and argv[1] == "test":
         tests()
 
