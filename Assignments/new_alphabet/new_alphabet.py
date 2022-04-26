@@ -16,7 +16,7 @@ from sys import *
 def tests():
     assert convert_string("Nice to meet you!") == "[]\[]|(3 ']['0 []\/[]33'][' `/0|_|!"
     assert convert_string("This is fun.") == "']['[-]|$ |$ #|_|[]\[]."
-    assert convert_string("Good job team!") == "600|) _|0* ']['3@[]\/[]!"
+    assert convert_string("Good job team!") == "600|) _|08 ']['3@[]\/[]!"
 
 #Step 1
 def create_dict():
@@ -50,10 +50,10 @@ def create_dict():
     return new_alphabet
 
 #Step 2
-def convert_string(new_alphabet):
-    old_alphabet = input()
+def convert_string(old_alphabet):
     old_alphabet = old_alphabet.lower()
     new_string = ''
+    new_alphabet = create_dict()
     for i in old_alphabet:
         if i not in (new_alphabet.keys()):
             new_string += i 
@@ -63,11 +63,12 @@ def convert_string(new_alphabet):
 
 
 def main():
-    if (len(argv) == 2 and argv[1] == "test"):
+    
+    if (len(argv)) == 2 and argv[1] == "test":
         tests()
 
-    new_alphabet = create_dict()
-    new_string = convert_string(new_alphabet)
+    old_alphabet = input()
+    new_string = convert_string(old_alphabet)
     
     #Step 3
     print(new_string)
