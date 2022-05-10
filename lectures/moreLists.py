@@ -45,7 +45,7 @@ def split_nums():
     # nums = nums[5:]
     print(nums)
 
-    somestring = ' '.join(nums)
+    somestring = ' '.join(str(nums))
 
     print(somestring)
 
