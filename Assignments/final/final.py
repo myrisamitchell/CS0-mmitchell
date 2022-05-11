@@ -47,7 +47,6 @@ def guess_word(stages, display, game_word):
     #This is the bulk of the game. Replaces characters guessed correctly and keeps track of stages
     missed_letters = []
     trials = 0
-    # games_won = 0
     while trials != 6:
         print(f'{stages[trials]}')
         print(*display)
@@ -71,7 +70,6 @@ def guess_word(stages, display, game_word):
         else:
             print("Please use a single letter from the alphabet.")
         if display == list(game_word):
-            # games_won += 1
             print(' '.join(display))
             print(f"Congratulations! You guessed the word.")
             break
@@ -79,7 +77,7 @@ def guess_word(stages, display, game_word):
     if (trials == 6):
         print(stages[6])
         print(f"Oh no! You hung hangman.\nThe word was {game_word}.")
-    # return games_won
+
 
 def play_game():
     #Combines all elements of the game
@@ -90,22 +88,19 @@ def play_game():
         display.append('_')
     guess_word(stages, display, game_word)
     play_again()
-    # stats(games_won, games_played)
+
 
 def play_again():
-    # games_played = 1
     #Asks the player if they want to play again
-    play_again = input("Would you like to play again? Enter Y/N: ").lower()
-    if play_again == 'y':
-        # games_played += 1
+    play_more = input("Would you like to play again? Enter Y/N: ").lower()
+    if play_more == 'y':
         print("Guess the secret word!")
         play_game()
-    else:
+    elif play_more == 'n':
         print('Okay! See you next time!')
-
-
-# def stats(games_won, times_played):
-    # print(f"You played {times_played} times and won {games_won} games.\nGreat job! See you next time!")
+    else:
+        print("Please enter 'Y' or 'N'.")
+        play_again()
 
 
 def main():
