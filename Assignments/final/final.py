@@ -41,12 +41,13 @@ def greet_player():
     #This function greets the player before theey play the game
     player_name = input("Hi! What is your name? ").capitalize()
     print(f'Hi {player_name}. Welcome to Hangman!')
-    print(f"Try to guess the secret word!")
 
 def guess_word(stages, display, game_word):
+    guessed = False
     #This is the bulk of the game. Replaces characters guessed correctly and keeps track of stages
     missed_letters = []
-    trials = 0
+    trials = 0 
+    print(f"Try to guess the secret word!")
     while trials != 6:
         print(f'{stages[trials]}')
         print(*display)
@@ -70,6 +71,7 @@ def guess_word(stages, display, game_word):
         else:
             print("Please use a single letter from the alphabet.")
         if display == list(game_word):
+            guessed = True
             print(' '.join(display))
             print(f"Congratulations! You guessed the word.")
             break
@@ -77,37 +79,45 @@ def guess_word(stages, display, game_word):
     if (trials == 6):
         print(stages[6])
         print(f"Oh no! You hung hangman.\nThe word was {game_word}.")
-
-
-def play_game():
-    #Combines all elements of the game
-    stages = board()
-    game_word = choose_word()
-    display = []
-    for i in range(len(game_word)):
-        display.append('_')
-    guess_word(stages, display, game_word)
-    play_again()
+    return guessed
 
 
 def play_again():
+    play = False
     #Asks the player if they want to play again
     play_more = input("Would you like to play again? Enter Y/N: ").lower()
     if play_more == 'y':
-        print("Guess the secret word!")
-        play_game()
+        play = True 
     elif play_more == 'n':
         print('Okay! See you next time!')
     else:
         print("Please enter 'Y' or 'N'.")
         play_again()
+    return play
 
 
 def main():
-    
+    games_won = 0
+    games_played = 1
+    hangman = True
     greet_player()
-    play_game()
-
+    while hangman:
+        stages = board()
+        game_word = choose_word()
+        #Create display
+        display = []
+        for i in range(len(game_word)):
+            display.append('_')
+        guessed = guess_word(stages, display, game_word)
+        if guessed == True:
+            games_won += 1
+        play = play_again()
+        if play == True:
+            games_played += 1
+        else:
+            #Displays game stats
+            print(f"You won {games_won} games and played {games_played} games. Great job!")
+            hangman = False
 
 if __name__ == "__main__":
     main()
