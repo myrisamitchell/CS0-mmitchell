@@ -52,3 +52,7 @@
 - Screenshot is in new_alphabet folder
 - Read.me is up to date
 - Total points = 100
+## Final Project
+- All requirements met
+- Read.me is up to date
+- Total points = 100
