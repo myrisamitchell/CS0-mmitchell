@@ -2,6 +2,7 @@
 Name: Myrisa Mitchell
 Date: April 25, 2022
 
+New Alphabet Kattis problem
 This program will convert letters of the alphabet to a "New alphabet".
 
 Step 1: Create dictionary of new alphabet
