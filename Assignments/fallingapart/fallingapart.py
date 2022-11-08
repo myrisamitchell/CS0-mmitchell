@@ -2,6 +2,7 @@
 Name: Myrisa Mitchell
 Date: April 15, 2022
 
+Falling Apart Kattis problem
 This program will search through a list and add pieces alternatively to Alice and Bob's sums.
 
 Step 1: Take input of list of broken integer
