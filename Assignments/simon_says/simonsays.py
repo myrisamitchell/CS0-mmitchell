@@ -2,6 +2,8 @@
 Name: Myrisa Mitchell
 Date: April 15, 2022
 
+Simon Says Kattis problem
+
 This program will search through rows of commands and do what simon says in strings that 
 contain "Simon says"
 
